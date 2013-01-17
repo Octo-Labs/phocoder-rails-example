@@ -1,4 +1,6 @@
 PhocoderRailsExample::Application.routes.draw do
+  resources :image_uploads, :except=>[:edit,:update]
+
   resources :widgets
 
   root :to => 'widgets#index'
